@@ -1,2 +1,2 @@
 #!/bin/bash
-find . \( -type d -a -empty -o -type f -a -empty \) -printf "%f\n"
+find . -mindepth 1 \( -type d -a -empty -o -type f -a -empty \) -printf "%f\n" | sort
